@@ -9,8 +9,8 @@ appID = os.environ.get("APP_ID")
 appSecret = os.environ.get("APP_SECRET")
 # 收信人ID即 用户列表中的微信号
 openId = os.environ.get("OPEN_ID")
-# 天气预报模板ID
-weather_template_id = os.environ.get("TEMPLATE_ID")
+# 模板ID
+template_id = os.environ.get("MESSAGE_ID")
 
 
 def get_access_token():
@@ -37,7 +37,7 @@ def send_sign_success(access_token):
 
     body = {
         "touser": openId.strip(),
-        "template_id": weather_template_id.strip(),
+        "template_id": template_id.strip(),
         "url": "https://weixin.qq.com",
         "data": {
             "time": {  # 模板中的变量名
