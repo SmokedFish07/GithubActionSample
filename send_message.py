@@ -44,7 +44,7 @@ def send_sign_success(access_token):
                 "value": time_str
             },
             "status": {  # 模板中的变量名
-                "value": "签到成功 ✅"
+                "value": "签到成功"
             },
             "remark": {  # 模板中的变量名
                 "value": "祝您今天工作愉快！"
