@@ -29,7 +29,9 @@ def send_sign_success(access_token):
         "data": {
             "time": {"value": time_str},
             "status": {"value": "签到成功"},
-            "remark": {"value": "祝您今天工作愉快！"}
+            "msg": {
+                            "value": "祝您今天工作愉快"
+                        }
         }
     }
     
