@@ -6,7 +6,7 @@ import datetime
 appID = os.environ.get("APP_ID")
 appSecret = os.environ.get("APP_SECRET")
 openId = os.environ.get("OPEN_ID")
-template_id = os.environ.get("MESSAGE_ID")
+template_id = os.environ.get("TEMPLATE_ID")
 
 def get_access_token():
     url = f'https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={appID.strip()}&secret={appSecret.strip()}'
